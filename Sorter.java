@@ -3,7 +3,7 @@
 public class Sorter {
     public static void main(String[] args) {
     }
-    void sort(int arr[])
+    void selectionSort(int arr[])
     {
         int n = arr.length;
 
@@ -22,5 +22,8 @@ public class Sorter {
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
+    }
+    public static void sort(int arr[]) {
+        selectionSort(arr);
     }
 }
