@@ -2,11 +2,12 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Sorter {
     public static void main(String[] args) {
+        int[] arr = {5, 2, 8, 12, 1, 6};
+        sort(arr);
     }
-<<<<<<< HEAD
+<<<<<<<HEAD
 
-    public static void insertionSort(int arr[])
-    {
+    public static void insertionSort(int arr[]) {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
             int key = arr[i];
@@ -20,9 +21,10 @@ public class Sorter {
             }
             arr[j + 1] = key;
         }
+    }
 =======
-    void sort(int arr[])
-    {
+
+    public static void selectionSort(int arr[]) {
         int n = arr.length;
 
         // One by one move boundary of unsorted subarray
@@ -41,5 +43,11 @@ public class Sorter {
             arr[i] = temp;
         }
     }
->>>>>>> fb870e762a409a4c4b7fc926386b5630e2b6d032
+
+    public static void sort(int arr[]) {
+        insertionSort(arr);
+    }
+
+
+>>>>>>>fb870e762a409a4c4b7fc926386b5630e2b6d032
 }
